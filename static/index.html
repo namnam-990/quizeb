@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>퀴즈 앱</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="/" class="navbar-brand">📚 QuizApp</a>
+    <div class="navbar-links">
+      <a href="/admin">관리자</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="page-header">
+      <h1 class="page-title">폴더 선택</h1>
+      <p class="page-subtitle">학습할 퀴즈 폴더를 선택하세요.</p>
+    </div>
+
+    <div id="loading" class="loading"><div class="spinner"></div></div>
+    <div id="folders-grid" class="grid" style="display:none;"></div>
+    <div id="empty-state" class="empty-state" style="display:none;">
+      <div class="empty-icon">📂</div>
+      <div class="empty-title">폴더가 없습니다</div>
+      <p class="empty-desc">관리자 페이지에서 폴더와 퀴즈를 추가해주세요.</p>
+      <br>
+      <a href="/admin" class="btn btn-primary">관리자 페이지로 이동</a>
+    </div>
+  </div>
+
+  <script src="/static/js/main.js"></script>
+</body>
+</html>
